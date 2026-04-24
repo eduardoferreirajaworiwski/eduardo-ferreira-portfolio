@@ -23,7 +23,7 @@ function ProjectPanel({ label, children, className }: ProjectPanelProps) {
   return (
     <div
       className={cn(
-        "rounded-[1.6rem] border border-white/[0.08] bg-background/45 p-5 ring-1 ring-inset ring-white/[0.03]",
+        "rounded-[0.3rem] border border-white/[0.08] bg-background/38 p-5 ring-1 ring-inset ring-white/[0.02]",
         className
       )}
     >
@@ -59,8 +59,8 @@ export function ProjectCard({
       className={cn(
         "h-full",
         isFeatured
-          ? "min-h-[38rem] border-white/[0.09] bg-[linear-gradient(180deg,rgba(17,25,38,0.98),rgba(8,12,20,0.98))] p-8 sm:p-10 lg:p-11"
-          : "min-h-[30rem] bg-[linear-gradient(180deg,rgba(14,20,31,0.96),rgba(8,12,20,0.99))] p-7 sm:p-8"
+          ? "min-h-[38rem] border-white/[0.1] bg-[linear-gradient(180deg,rgba(17,19,24,0.99),rgba(10,12,16,0.99))] p-8 sm:p-10 lg:p-11"
+          : "min-h-[30rem] bg-[linear-gradient(180deg,rgba(15,18,23,0.98),rgba(10,12,16,0.99))] p-7 sm:p-8"
       )}
     >
       <div className="flex h-full flex-col">
@@ -68,13 +68,13 @@ export function ProjectCard({
           <div className="flex flex-1 flex-wrap items-center gap-3">
             <Tag
               className={cn(
-                "border-accent/18 bg-accent-soft/70 text-accent",
-                !isFeatured && "bg-surface-soft/75 text-accent/90"
+                "border-white/[0.08] bg-surface-soft/46 text-accent/92",
+                !isFeatured && "bg-surface-soft/38 text-accent/86"
               )}
             >
               {category}
             </Tag>
-            {badge ? <Tag className="bg-background/55 text-muted-strong">{badge}</Tag> : null}
+            {badge ? <Tag className="bg-background/38 text-muted-strong">{badge}</Tag> : null}
           </div>
 
           <div className="flex items-center gap-3">
@@ -85,7 +85,7 @@ export function ProjectCard({
               href={githubUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-white/[0.08] bg-background/45 px-4 py-2 text-sm font-medium text-foreground transition duration-300 hover:border-accent/[0.28] hover:text-accent"
+              className="inline-flex items-center gap-2 rounded-[0.25rem] border border-white/[0.08] bg-background/38 px-4 py-2 font-mono text-[11px] uppercase tracking-[0.16em] text-foreground transition duration-300 hover:border-white/[0.16] hover:text-accent"
             >
               <span>GitHub</span>
               <span aria-hidden className="text-accent/75">
@@ -96,8 +96,8 @@ export function ProjectCard({
         </div>
 
         <h3
-          className={cn(
-            "mt-8 max-w-4xl font-display font-semibold tracking-[-0.05em] text-foreground",
+            className={cn(
+            "mt-8 max-w-4xl font-display font-semibold uppercase tracking-[-0.05em] text-foreground",
             isFeatured
               ? "text-[2.45rem] leading-[0.96] sm:text-[2.8rem]"
               : "text-[1.8rem] leading-[1.02] sm:text-[2rem]"
@@ -108,7 +108,7 @@ export function ProjectCard({
 
         <p
           className={cn(
-            "mt-4 max-w-3xl text-accent/82",
+            "mt-4 max-w-3xl text-accent/76",
             isFeatured ? "text-[0.93rem] leading-7" : "text-[0.9rem] leading-6"
           )}
         >
@@ -166,7 +166,7 @@ export function ProjectCard({
             <ProjectPanel label="Primary Stack">
               <div className="flex flex-wrap gap-2.5">
                 {stack.map((item) => (
-                  <Tag key={item} className="bg-background/55 text-muted-strong">
+                  <Tag key={item} className="bg-background/38 text-muted-strong">
                     {item}
                   </Tag>
                 ))}
