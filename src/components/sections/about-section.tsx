@@ -58,7 +58,7 @@ export function AboutSection() {
         <div className="mt-6 grid gap-4 md:grid-cols-2">
           {about.highlights.map((highlight, index) => (
             <Reveal key={highlight.title} delay={0.1 + index * 0.03}>
-              <SurfaceCard className="h-full bg-[linear-gradient(180deg,rgba(17,23,34,0.82),rgba(10,14,22,0.96))]">
+              <SurfaceCard className="h-full">
                 <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-accent/75">
                   {String(index + 1).padStart(2, "0")}
                 </p>

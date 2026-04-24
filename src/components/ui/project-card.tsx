@@ -59,8 +59,8 @@ export function ProjectCard({
       className={cn(
         "h-full",
         isFeatured
-          ? "min-h-[38rem] border-white/[0.1] bg-[linear-gradient(180deg,rgba(17,19,24,0.99),rgba(10,12,16,0.99))] p-8 sm:p-10 lg:p-11"
-          : "min-h-[30rem] bg-[linear-gradient(180deg,rgba(15,18,23,0.98),rgba(10,12,16,0.99))] p-7 sm:p-8"
+          ? "min-h-[38rem] border-white/[0.1] bg-surface/95 p-8 sm:p-10 lg:p-11"
+          : "min-h-[30rem] bg-surface/95 p-7 sm:p-8"
       )}
     >
       <div className="flex h-full flex-col">
