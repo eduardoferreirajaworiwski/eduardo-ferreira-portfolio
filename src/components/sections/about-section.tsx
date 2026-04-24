@@ -25,7 +25,9 @@ export function AboutSection() {
         <div className="mt-14 grid gap-6 lg:grid-cols-[minmax(0,1.08fr)_minmax(320px,0.92fr)]">
           <Reveal delay={0.05}>
             <SurfaceCard className="h-full p-8 lg:p-10" interactive={false}>
-              <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-accent/[0.85]">About</p>
+              <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-accent/[0.85]">
+                Security approach
+              </p>
               <div className="mt-8 space-y-6">
                 <p className="text-lg leading-9 text-foreground/[0.92]">{leadParagraph}</p>
                 <div className="space-y-5 text-base leading-8 text-muted">
