@@ -25,15 +25,15 @@ export function Reveal({
       initial={
         reduceMotion
           ? { opacity: 0 }
-          : { opacity: 0, y: distance, filter: "blur(8px)", scale: 0.985 }
+          : { opacity: 0, y: distance, scale: 0.99 }
       }
       whileInView={
         reduceMotion
           ? { opacity: 1 }
-          : { opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }
+          : { opacity: 1, y: 0, scale: 1 }
       }
       viewport={{ once: true, amount: 0.18 }}
-      transition={{ duration: 0.8, delay, ease: [0.16, 1, 0.3, 1] }}
+      transition={{ duration: 0.7, delay, ease: [0.16, 1, 0.3, 1] }}
     >
       {children}
     </motion.div>
