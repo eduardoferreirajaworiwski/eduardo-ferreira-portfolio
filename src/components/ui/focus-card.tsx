@@ -14,9 +14,9 @@ export function FocusCard({ title, description, items, index }: FocusCardProps) 
         <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-accent/75">
           {String(index).padStart(2, "0")}
         </span>
-        <span className="h-px flex-1 bg-gradient-to-r from-line/80 to-transparent" />
+        <span className="h-px flex-1 bg-white/[0.08]" />
       </div>
-      <h3 className="mt-5 font-display text-[1.7rem] font-semibold tracking-[-0.035em] text-foreground">
+      <h3 className="mt-5 font-display text-[1.5rem] font-semibold uppercase tracking-[-0.035em] text-foreground">
         {title}
       </h3>
       <p className="mt-4 text-sm leading-7 text-muted">{description}</p>

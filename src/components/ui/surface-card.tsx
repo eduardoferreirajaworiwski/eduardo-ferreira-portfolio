@@ -33,12 +33,12 @@ export function SurfaceCard({
       transition={{
         type: "spring",
         stiffness: 220,
-        damping: 24,
-        mass: 0.7
+        damping: 26,
+        mass: 0.8
       }}
       className={cn(
-        "group relative overflow-hidden rounded-[2rem] border border-white/[0.07] bg-[linear-gradient(180deg,rgba(16,22,33,0.94),rgba(8,12,20,0.98))] p-6 shadow-panel ring-1 ring-inset ring-white/[0.03] backdrop-blur-md before:pointer-events-none before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_top_left,rgba(171,192,255,0.11),transparent_34%)] before:opacity-100 after:pointer-events-none after:absolute after:inset-x-8 after:top-0 after:h-px after:bg-gradient-to-r after:from-transparent after:via-white/15 after:to-transparent",
-        interactive && "hover:border-accent/20 hover:shadow-panel-hover",
+        "group relative overflow-hidden rounded-[0.35rem] border border-white/[0.08] bg-[linear-gradient(180deg,rgba(16,18,24,0.98),rgba(11,13,17,0.99))] p-6 shadow-none ring-1 ring-inset ring-white/[0.02] before:pointer-events-none before:absolute before:inset-0 before:bg-[linear-gradient(180deg,rgba(255,255,255,0.015),transparent_18%,transparent_82%,rgba(255,255,255,0.01))] before:opacity-100 after:pointer-events-none after:absolute after:left-0 after:top-0 after:h-full after:w-px after:bg-white/[0.05]",
+        interactive && "hover:border-white/[0.14] hover:bg-[linear-gradient(180deg,rgba(18,21,28,0.98),rgba(11,13,17,0.99))]",
         className
       )}
       {...props}

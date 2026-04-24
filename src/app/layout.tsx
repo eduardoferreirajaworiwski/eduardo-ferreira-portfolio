@@ -41,13 +41,10 @@ export default function RootLayout({
       <body className={`${sans.variable} ${display.variable} ${mono.variable} overflow-x-hidden`}>
         <div className="relative min-h-screen">
           <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-            <div className="absolute inset-x-0 top-0 h-[40rem] bg-grid bg-grid-size opacity-[0.08] [mask-image:linear-gradient(180deg,rgba(255,255,255,0.75),transparent)]" />
-            <div className="absolute left-1/2 top-[-16rem] h-[46rem] w-[46rem] -translate-x-1/2 rounded-full border border-white/[0.05]" />
-            <div className="absolute left-[12%] top-[9rem] hidden h-40 w-px bg-gradient-to-b from-transparent via-accent/30 to-transparent lg:block" />
-            <div className="absolute right-[14%] top-[18rem] hidden h-56 w-px bg-gradient-to-b from-transparent via-white/10 to-transparent xl:block" />
-            <div className="absolute left-1/2 top-0 h-[44rem] w-[44rem] -translate-x-1/2 rounded-full bg-accent/[0.08] blur-3xl" />
-            <div className="absolute right-[-10rem] top-[18rem] h-[28rem] w-[28rem] rounded-full bg-accent-soft/50 blur-3xl" />
-            <div className="absolute left-[-8rem] top-[32rem] h-[24rem] w-[24rem] rounded-full bg-surface-soft/30 blur-3xl" />
+            <div className="absolute inset-x-0 top-0 h-[28rem] bg-grid bg-grid-size opacity-[0.05] [mask-image:linear-gradient(180deg,rgba(255,255,255,0.6),transparent)]" />
+            <div className="absolute left-[9%] top-0 hidden h-full w-px bg-gradient-to-b from-transparent via-white/[0.06] to-transparent xl:block" />
+            <div className="absolute right-[9%] top-0 hidden h-full w-px bg-gradient-to-b from-transparent via-white/[0.05] to-transparent xl:block" />
+            <div className="absolute inset-x-[7%] top-[6.5rem] hidden h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent lg:block" />
           </div>
           {children}
         </div>
