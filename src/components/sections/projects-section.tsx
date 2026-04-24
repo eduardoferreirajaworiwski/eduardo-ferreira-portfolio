@@ -23,8 +23,8 @@ export function ProjectsSection() {
           <div>
             <SectionHeading
               eyebrow="Selected Projects"
-              title="Projects with stronger signal and less filler."
-              description="The section now prioritizes problem, architecture and outcome so the best work is readable in a fast recruiter scan."
+              title="Selected security engineering projects."
+              description="Independent projects focused on defensive automation, OSINT, AI-assisted workflows and analyst-facing security tooling."
             />
 
             <div className="mt-6 flex flex-wrap gap-2.5">

@@ -110,7 +110,7 @@ export const portfolioContent = {
       summary:
         "Hands-on identity and SaaS security work focused on Google Workspace, Entra ID, DLP, access controls and automation in a cloud environment.",
       bullets: [
-        "Owned Identity & Access Management practices across a cloud-based corporate environment.",
+        "Helped strengthen Identity & Access Management practices across a cloud-based corporate environment, with focus on lifecycle controls, access reviews and least privilege.",
         "Worked on Google Workspace Security, Microsoft Entra ID, DLP, MFA and Context-Aware Access.",
         "Strengthened RBAC and least-privilege controls for business and administrative access.",
         "Built administrative log analysis and access review workflows for recurring validation.",

@@ -18,13 +18,13 @@ export function SectionShell({
   return (
     <section
       id={id}
-      className={cn(
-        "section-space relative scroll-mt-28",
-        divider &&
-          "before:pointer-events-none before:absolute before:left-1/2 before:top-0 before:h-px before:w-[calc(100%-3rem)] before:max-w-[72rem] before:-translate-x-1/2 before:bg-gradient-to-r before:from-transparent before:via-line/90 before:to-transparent",
-        className
-      )}
-    >
+        className={cn(
+          "section-space relative scroll-mt-28",
+          divider &&
+            "before:pointer-events-none before:absolute before:left-1/2 before:top-0 before:h-px before:w-[calc(100%-2.5rem)] before:max-w-[68rem] before:-translate-x-1/2 before:bg-white/[0.06]",
+          className
+        )}
+      >
       {children}
     </section>
   );
